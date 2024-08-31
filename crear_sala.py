@@ -20,6 +20,13 @@ def crear_sala():
             for j in range(colum):
                 acu+=1 
                 sala[i][j]=acu
-    print (sala)
+    print()
+    for fila in sala:
+        print("", end="")
+        for elemento in fila:
+            print("{:4}".format(elemento), end='')
+        print('')
+    print()
+
 crear_sala()
 
