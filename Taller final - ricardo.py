@@ -79,7 +79,7 @@ def asignar_puesto():
             asiento = input("Ingrese el número del asiento que desea reservar: ")
             for fila in salas[numero_sala]:
                 if asiento in fila:
-                    fila[fila.index(asiento)] = "X"
+                    fila[fila.index(asiento)] = (f"{Fore.GREEN}■{Style.RESET_ALL}")
                     print(f"Asiento {asiento} reservado exitosamente.")
                     ver_sala(numero_sala)
                     return
