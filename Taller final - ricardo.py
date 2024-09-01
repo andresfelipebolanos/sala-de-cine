@@ -42,7 +42,7 @@ def mostrar_menu():
     print(f"{Fore.GREEN}|             5-Salir              |{Style.RESET_ALL}")
     print(f"{Fore.GREEN}|__________________________________|{Style.RESET_ALL}")
 
-def crear_sala():
+def crear_sala(): 
     try:
         filas = int(input("Ingrese el número de filas de la sala: "))
         columnas = int(input("Ingrese el número de columnas de la sala: "))
@@ -93,7 +93,8 @@ def menu():
     while True:
         mostrar_menu()
         try:
-            opcion = int(input("Ingrese la opción que necesite (Número):  ")) 
+            opcion = int(input("Ingrese la opción que necesite (Número):  "))
+            #aqui se elige el numero 
 
             if opcion == 1:
                 print(f"{Fore.GREEN}Has seleccionado 'Crear sala'.{Style.RESET_ALL}")
@@ -113,17 +114,28 @@ def menu():
             
             elif opcion == 4:
                 print(f"{Fore.GREEN}Has seleccionado 'Cargar sala'.{Style.RESET_ALL}")
-                # Aquí podrías cargar la sala desde un archivo o base de datos si lo necesitas
+                # aqui van las funciones llamadas
                 input(f"{Fore.GREEN}Presiona (Enter) para continuar...{Style.RESET_ALL}")
             
             elif opcion == 5:
-                print(f"{Fore.BLUE}|-----|Gracias por utilizar nuestros servicios|------|\n{Style.RESET_ALL}")
-                print(f"{Fore.BLUE}|-------------|Hasta pronto|------------------|\n{Style.RESET_ALL}")
-                time.sleep(2)
+                #aqui termina el programa, dando una breve despedida amigable
+                print(f"{Fore.BLUE}|-----|Gracias por utilizar nuestros|------|\n{Style.RESET_ALL}")
+                print(f"{Fore.BLUE}|-------------|Servicios|------------------|\n{Style.RESET_ALL}")
+                time.sleep(4)
+                sys.stdout.write('\r' + ' ' * 100)
+                print("                                                            ")
+                print(f"{Fore.GREEN}______________________________{Style.RESET_ALL}") 
+                print(f"{Fore.GREEN}|                            |{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|       TEATRO APOLO         |{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|____________________________|{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|                            |{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|    35  años presentando    |{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|   Historias inolvidables   |{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}|____________________________|{Style.RESET_ALL}\n")
                 break
             else:
                 print(f"{Fore.RED}Ingresa una opción válida (1-5).{Style.RESET_ALL}")
         except ValueError:
-            print(f"{Fore.RED}(Error) Ingresa un número válido.{Style.RESET_ALL}")
+            print(f"{Fore.RED}(Error) Ingresa un caracter válido.{Style.RESET_ALL}")
 
 menu()
