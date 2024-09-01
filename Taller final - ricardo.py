@@ -98,18 +98,18 @@ def menu():
 
             if opcion == 1:
                 print(f"{Fore.GREEN}Has seleccionado 'Crear sala'.{Style.RESET_ALL}")
-                crear_sala()
+                crear_sala() #funcion llamada
                 input(f"{Fore.GREEN}Presiona (Enter) para continuar...{Style.RESET_ALL}")
             
             elif opcion == 2:
                 print(f"{Fore.GREEN}Has seleccionado 'Ver sala'.{Style.RESET_ALL}")
                 numero_sala = int(input("Ingrese el número de la sala: "))
-                ver_sala(numero_sala)
+                ver_sala(numero_sala) #funcion llamada
                 input(f"{Fore.GREEN}Presiona (Enter) para continuar...{Style.RESET_ALL}")
             
             elif opcion == 3:
                 print(f"{Fore.GREEN}Has seleccionado 'Asignar puesto'.{Style.RESET_ALL}")
-                asignar_puesto()
+                asignar_puesto() #funcion llamada
                 input(f"{Fore.GREEN}Presiona (Enter) para continuar...{Style.RESET_ALL}")
             
             elif opcion == 4:
