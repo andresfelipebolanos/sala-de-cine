@@ -1,24 +1,15 @@
-
-def crear_sala():
-    fila = int(input('Ingrese numero de filas: '))
-    colum= int(input('ingresa nuemro de columnas: '))
+def  crear_sala(f,c):
+    global sala
     acu=0
     sala=[]
-    for i in range (fila):
+    for i in range (f):
         sala.append([])
-        for j in range (colum):
+        for j in range (c):
             sala[i].append(0)
-    for i in range (fila):
-            for j in range(colum):
+    for i in range (f):
+            for j in range(c):
                 acu+=1 
                 sala[i][j]=acu
     print()
-    for fila in sala:
-        print("", end="")
-        for elemento in fila:
-            print("{:4}".format(elemento), end='')
-        print('')
-    print()
-
 crear_sala()
 
