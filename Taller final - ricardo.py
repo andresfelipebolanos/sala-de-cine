@@ -6,16 +6,7 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 salas = {
-    1: [
-        ["1", "2", "3"],
-        ["4", "5", "6"],
-        ["7", "8", "9"],
-    ],
-    2: [
-        ["1", "2", "3"],
-        ["4", "5", "6"],
-        ["7", "8", "9"],
-    ]
+
 }
 
 # Inicio del programa con breve intro del cine
@@ -94,7 +85,6 @@ def menu():
         mostrar_menu()
         try:
             opcion = int(input("Ingrese la opción que necesite (Número):  "))
-            #aqui se elige el numero 
 
             if opcion == 1:
                 print(f"{Fore.GREEN}Has seleccionado 'Crear sala'.{Style.RESET_ALL}")
